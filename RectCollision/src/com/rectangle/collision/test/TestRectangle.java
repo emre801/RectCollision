@@ -14,13 +14,13 @@ import com.rectangle.collision.RectangleCollision;
 public class TestRectangle {
 
 	@Test
-	public void testHeightAndWidth(){
+	public void testHeightAndWidth() throws Exception{
 		Rectangle rect = new Rectangle(0,0,10,5);
 		Assert.assertEquals("Width is not 10", 10.0,rect.getWidth());
 		Assert.assertEquals("Height is not 5", 5.0,rect.getHeight());
 	}
 	@Test
-	public void testContainsRectangle(){
+	public void testContainsRectangle() throws Exception{
 		Rectangle rect1 = new Rectangle(5,5,8,8);
 		Rectangle rect2 = new Rectangle(0,0,10,10);
 		Rectangle rect3 = new Rectangle(12,12,20,20);
@@ -33,7 +33,7 @@ public class TestRectangle {
 	}
 	
 	@Test
-	public void testAdjacent(){
+	public void testAdjacent()throws Exception{
 		Rectangle rect1 = new Rectangle(0,0,5,5);
 		Rectangle rect2 = new Rectangle(5,5,10,10);
 		Rectangle rect3 = new Rectangle(12,12,20,20);
@@ -51,7 +51,7 @@ public class TestRectangle {
 	}
 	
 	@Test
-	public void testIntersect(){
+	public void testIntersect()throws Exception{
 /*		Rectangle rect1 = new Rectangle(1,1,3,3);
 		Rectangle rect2 = new Rectangle(10,10,20,20);
 		Rectangle rect3 = new Rectangle(2,2,20,20);*/
